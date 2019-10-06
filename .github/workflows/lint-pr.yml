@@ -11,5 +11,4 @@ jobs:
     - uses: yogevbd/pr-lint-action@prBodyParser
       env:
         VALID_LABELS: bug,enhancement,feature
-        DESCRIPTION_SECTIONS: ${{ {obj: "a"} }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
