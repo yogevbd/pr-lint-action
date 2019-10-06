@@ -11,5 +11,8 @@ jobs:
     - uses: yogevbd/pr-lint-action@prBodyParser
       env:
         VALID_LABELS: bug,enhancement,feature
+        DESCRIPTION_SECTIONS:
+          - beginsWith: "changelog"
+            endsWith: "####"
+            message: "Should provide changelog"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ACTIONS_STEP_DEBUG: true
