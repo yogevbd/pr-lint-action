@@ -12,7 +12,7 @@ jobs:
       env:
         VALID_LABELS: bug,enhancement,feature
         DESCRIPTION_SECTIONS:
-          - beginsWith: "changelog"
-            endsWith: "####"
+            beginsWith: changelog
+            endsWith: aaa
             message: "Should provide changelog"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
