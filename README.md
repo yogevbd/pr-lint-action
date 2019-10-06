@@ -16,10 +16,30 @@ jobs:
   lint-pr:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
+      with:
+        ref: master
     - uses: yogevbd/pr-lint-action@master
       env:
-        VALID_LABELS: bug,enhancement,feature
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Edit `VALID_LABELS` to contain your desired valid labels.
+Add `pr-lint.config.js` file to your main folder:
+```javascript
+module.exports = {
+  validLabels: [
+    "bug",
+    "skip-changelog",
+    "enhancement",
+    "feature"
+  ],
+  mandatorySections: [
+    {
+      beginsWith: "Changelog",
+      endsWith: "End of changelog",
+      message: "Changelog section is mandatory",
+      minimumLength: 10
+    }
+  ]
+}
+```
