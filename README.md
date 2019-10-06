@@ -13,7 +13,7 @@ on:
     types: [labeled, unlabeled, opened, edited]
 
 jobs:
-  enforce-label:
+  lint-pr:
     runs-on: ubuntu-latest
     steps:
     - uses: yogevbd/pr-lint-action@master

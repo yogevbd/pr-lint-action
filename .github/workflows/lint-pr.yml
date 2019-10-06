@@ -1,14 +1,15 @@
-name: Lint PR
+name: lint-pr
 
 on:
   pull_request:
     types: [labeled, unlabeled, opened, edited]
 
 jobs:
-  enforce-label:
+  lint-pr:
     runs-on: ubuntu-latest
     steps:
     - uses: yogevbd/pr-lint-action@master
       env:
         VALID_LABELS: bug,enhancement,feature
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACTIONS_STEP_DEBUG: true
