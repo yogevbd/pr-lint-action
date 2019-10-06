@@ -1,8 +1,6 @@
-name: Lint PR
+name: enforce-label
 
-on:
-  pull_request:
-    types: [labeled, unlabeled, opened, edited]
+on: [push, pull_request]
 
 jobs:
   enforce-label:
@@ -12,3 +10,4 @@ jobs:
       env:
         VALID_LABELS: bug,enhancement,feature
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACTIONS_STEP_DEBUG: true
