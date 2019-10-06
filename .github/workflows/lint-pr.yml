@@ -1,9 +1,9 @@
-name: enforce-label
+name: lint-pr
 
 on: [push, pull_request]
 
 jobs:
-  enforce-label:
+  lint-pr:
     runs-on: ubuntu-latest
     steps:
     - uses: yogevbd/pr-lint-action@prBodyParser
