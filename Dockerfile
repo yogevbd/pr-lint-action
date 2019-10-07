@@ -1,6 +1,6 @@
 FROM node:10-slim
 
-LABEL com.github.actions.name="Lint labels and PR body Action"
+LABEL com.github.actions.name="PR Linter"
 LABEL com.github.actions.description="Lint PR before merging"
 LABEL com.github.actions.icon="code"
 LABEL com.github.actions.color="blue"
