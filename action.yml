@@ -1,0 +1,5 @@
+name: 'PR Linter'
+description: 'Lint PR before merging'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
