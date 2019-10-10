@@ -1,0 +1,8 @@
+name: 'PR Linter'
+description: 'Lint PR before merging'
+branding:
+  icon: 'check-square'  
+  color: 'orange'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
