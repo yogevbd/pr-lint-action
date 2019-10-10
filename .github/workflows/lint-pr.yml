@@ -8,7 +8,7 @@ jobs:
   lint-pr:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@prBodyParser
+    - uses: actions/checkout@master
       with:
         ref: master
     - uses: yogevbd/pr-lint-action@master
