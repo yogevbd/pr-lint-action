@@ -25,7 +25,6 @@ module.exports = {
           const validTicketsFormat = ['WOA', 'WOAI', 'CHAT', 'FRM', 'GROUP', 'OAV', 'CSF', 'WCN'];
           const exists = validTicketsFormat.map(format => {
               const re = new RegExp(format);
-              console.log(section);
               const result = re.test(section.toUpperCase());
               return result;
           });
