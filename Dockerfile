@@ -12,4 +12,4 @@ LABEL maintainer="Yogev Ben David <yogev132@gmail.com>"
 COPY . .
 RUN npm install
 
-ENTRYPOINT ["node", "/src/run.js"]
+ENTRYPOINT ["node", "/action/lib/run.js"]
