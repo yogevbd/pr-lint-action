@@ -10,7 +10,10 @@ module.exports = {
       beginsWith: "#### Changelog",
       endsWith: "#### Breaking changes",
       message: "Changelog section is mandatory",
-      minimumLength: 10
+      minimumLength: 10,
+      validate: (section) => {
+        return true;
+      }
     }
   ]
 }
