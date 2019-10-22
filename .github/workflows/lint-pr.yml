@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@master
       with:
         ref: ${{ secrets.GITHUB_REF }}
-    - uses: yogevbd/pr-lint-action@${{secrets.GITHUB_REF}}
+    - uses: yogevbd/pr-lint-action@itaischuftan-patch-1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
