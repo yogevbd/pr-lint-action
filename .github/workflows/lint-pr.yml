@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
       with:
-        ref: ${{ GITHUB_REF }}
+        ref: $GITHUB_REF
     - uses: yogevbd/pr-lint-action@prBodyParser
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
