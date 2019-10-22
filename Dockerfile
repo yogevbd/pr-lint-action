@@ -9,7 +9,5 @@ LABEL com.github.actions.homepage="https://github.com/yogevbd/pr-lint-action"
 
 LABEL maintainer="Yogev Ben David <yogev132@gmail.com>"
 
-COPY . .
-RUN npm install
-
+COPY lib /action/lib
 ENTRYPOINT ["node", "/action/lib/run.js"]
