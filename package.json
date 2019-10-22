@@ -1,0 +1,27 @@
+{
+  "name": "pr-lint-action",
+  "version": "1.0.0",
+  "description": "Lint PR before merging. Usefull for generating automatic changelog and release notes with `github-release-notes`",
+  "main": "pr-lint.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogevbd/pr-lint-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogevbd/pr-lint-action/issues"
+  },
+  "homepage": "https://github.com/yogevbd/pr-lint-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0"
+  }
+}
