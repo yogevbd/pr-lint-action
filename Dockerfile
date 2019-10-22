@@ -13,4 +13,4 @@ COPY . .
 # COPY lib /action/lib
 RUN npm install
 
-ENTRYPOINT ["node", "/action/lib/run.js"]
+ENTRYPOINT ["node", "/lib/run.js"]

@@ -2,7 +2,7 @@
   "name": "pr-lint-action",
   "version": "1.0.0",
   "description": "Lint PR before merging. Usefull for generating automatic changelog and release notes with `github-release-notes`",
-  "main": "pr-lint.config.js",
+  "main": "lib/run.js",
   "directories": {
     "lib": "lib"
   },
