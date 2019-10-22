@@ -17,7 +17,7 @@ module.exports = {
     {
       beginsWith: "#### Jira issue",
       endsWith: "#### Changelog",
-      message: "Changelog section is mandatory",
+      message: "Please insert a valid Jira ticket or leave empty",
       validate: (section) => {
         if (section === '') { 
           return true
